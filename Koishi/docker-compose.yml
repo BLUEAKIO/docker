@@ -1,0 +1,10 @@
+version: '3.8' 
+services:
+  koishi:
+    image: koishijs/koishi
+    ports:
+      - '5140:5140'
+    volumes:
+      - './koishi:/koishi'
+    environment:
+      - 'TZ=Asia/Shanghai'
