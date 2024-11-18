@@ -1,6 +1,7 @@
 version: '3.8' 
 services:
   koishi:
+    container_name: Koishi
     image: koishijs/koishi
     ports:
       - '5140:5140'
@@ -8,3 +9,4 @@ services:
       - './koishi:/koishi'
     environment:
       - 'TZ=Asia/Shanghai'
+    network_mode: 'bridge'
