@@ -9,7 +9,13 @@
 ### 使用方法
 
 ```
-curl -o docker-compose.yml https://github.com/BLUEAKIO/docker/blob/main/Koishi/docker-compose.yml
+curl -o docker-compose.yml https://fastly.jsdelivr.net/gh/BLUEAKIO/docker@main/Koishi/docker-compose.yml
+docker compose up -d
+```
+
+也可使用 BLUEAKIO 的 GitHub 文件加速服务
+```
+curl -o docker-compose.yml https://gh-proxy.blueakio.com/https://raw.githubusercontent.com/BLUEAKIO/docker/main/Koishi/docker-compose.yml
 docker compose up -d
 ```
 
