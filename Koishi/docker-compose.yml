@@ -10,3 +10,4 @@ services:
     environment:
       - 'TZ=Asia/Shanghai'
     network_mode: 'bridge'
+    restart: always
